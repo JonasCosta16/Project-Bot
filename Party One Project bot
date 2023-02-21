@@ -1,0 +1,38 @@
+import pdb; pdb.set_trace()
+import os
+import pdb
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium import webdriver
+import unittest
+
+class TestCase(unittest.TestCase):
+
+    @classmethod
+    def setUp(self):
+        self.driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
+        self.driver.get(os.getenv('base_url'))
+        self.driver.maximize_window()
+
+        self.password = 'lilodacost77777756561'
+    def temp_mail_base(self, email: str = None):
+        self.email_driver = webdriver.Chrome(executable_path=r'./chromedriver.exe')
+
+        url = "https://emailfake.com/"
+
+        if email is not None:
+            spl = self.email.split('@')
+            url += spl[1] + '/' + spl[0]
+
+        self.email_driver.get('https://www.instagram.com')
+
+        self.email_driver.maximize_window()
+
+        self.email  = self.email_driver.find_element_by_id("email_ch_text").text
+    def end_mail_base(self):
+
+        WebDriverWait(self.email_driver, 240).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(text(),'nao-responda@dominio.com')]"))
+        ).click()
+        pdb.run(globals=None, locals=None)
