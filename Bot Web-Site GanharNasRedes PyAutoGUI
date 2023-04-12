@@ -1,0 +1,44 @@
+# import pyautogui
+# import time
+
+
+
+# #           --------------- Abrindo o Menu da Windowns e Digitando o Nome 'Chrome' ---------------
+    
+# pyautogui.press('winleft')
+# time.sleep(3)
+# pyautogui.write('chrome')
+# time.sleep(3)
+# pyautogui.press('enter')
+# time.sleep(3)
+# pyautogui.press('enter')
+# time.sleep(10)
+    
+        
+#         #             --------------- Ele vai entrar no Site Ganhar Nas Redes ---------------
+
+# time.sleep(2)
+# pyautogui.write('https://www.ganharnasredes.com/painel/')
+# pyautogui.press('enter')
+# time.sleep(10)
+
+# pyautogui.click(x=100, y=602) # Aperta no botão Realizar Ações
+# time.sleep(10)
+
+# pyautogui.scroll(-1200) # Rolar para baixo
+# time.sleep(2)
+# pyautogui.click(x=400, y=590) #Iniciar Sistema
+
+
+# while True:
+#     time.sleep(15)
+#     pyautogui.click(x=845, y=590) # Ir para o Instagram para fazer a Ação
+#     time.sleep(12)
+#     pyautogui.click(x=810, y=127) # Coordenada para seguir
+#     time.sleep(3)
+#     pyautogui.click(x=890, y=560) # Coordenada para curtir
+#     time.sleep(3)
+#     pyautogui.hotkey('ctrl', 'w') # Sair da Aba lá do Instagram
+#     time.sleep(2)
+#     pyautogui.click(x=795, y=578)
+#     time.sleep(12)
